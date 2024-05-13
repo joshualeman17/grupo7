@@ -1,0 +1,210 @@
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333; /* dark background color */
+    padding: 1rem; /* add some padding to the navbar */
+    border-bottom: 2px solid #444; /* add a border to the bottom of the navbar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* add a shadow to the navbar */
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem; /* make the brand name larger */
+    font-weight: bold; /* make the brand name bold */
+    color: #fff; /* make the brand name white */
+    margin-right: 20px; /* add some space between the brand name and the image */
+  }
+  
+  .navbar-brand img {
+    width: 40px; /* set the logo width */
+    height: 40px; /* set the logo height */
+    margin-right: 10px; /* add some space between the logo and the brand name */
+    border-radius: 50%; /* make the logo a circle */
+  }
+  
+  .navbar-nav {
+    display: flex; /* make the navigation items flex */
+    flex-direction: row; /* make the navigation items horizontal */
+    justify-content: space-between; /* distribute the navigation items evenly */
+    align-items: center; /* center the navigation items vertically */
+  }
+  
+  .nav-item {
+    margin-right: 20px; /* add some space between the navigation items */
+  }
+  
+  .nav-link {
+    color: #fff; /* make the navigation links white */
+    text-decoration: none; /* remove the underline from the navigation links */
+    transition: color 0.2s ease; /* add a transition effect to the navigation links */
+  }
+  
+  .nav-link:hover {
+    color: #ccc; /* change the navigation link color on hover */
+  }
+  
+  .navbar-toggler {
+    border: none; /* remove the border from the toggle button */
+    padding: 0.5rem 1rem; /* add some padding to the toggle button */
+    font-size: 1.2rem; /* make the toggle button larger */
+    background-color: #444; /* make the toggle button darker */
+    color: #fff; /* make the toggle button text white */
+  }
+  
+  .navbar-toggler-icon {
+    font-size: 1.5rem; /* make the toggle icon larger */
+  }
+  
+
+/* Hero Section Styles */
+.hero-section {
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url('../img/header.png');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section.logo {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+
+.hero-section.sub-heading {
+  margin-top: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 35px;
+  font-weight: 300;
+}
+
+/* Product Styles */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.product {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.product h2 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.product p {
+  font-size: 14px;
+  color: #666;
+}
+
+.product button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product button:hover {
+  background-color: #444;
+}
+
+/* Slider Styles */
+.pre-btn,.nxt-btn {
+  border: none;
+  width: 10vw;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  cursor: pointer;
+  z-index: 8;
+}
+
+.pre-btn {
+  left: 0;
+  transform: rotate(180deg);
+}
+
+.nxt-btn {
+  right: 0;
+}
+
+.pre-btn img,.nxt-btn img {
+  opacity: 0.2;
+}
+
+.pre-btn:hover img,.nxt-btn:hover img {
+  opacity: 1;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+}
+
+.footer-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-social-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.social-link {
+  color: #fff;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.social-link:nth-child(1) {
+  margin-left: 0;
+}
+
+.footer-credit {
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}
